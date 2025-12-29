@@ -1,0 +1,97 @@
+@import 'tailwindcss';
+@import '@nuxt/ui';
+
+@layer base {
+  body {
+    @apply antialiased text-default bg-surface scheme-light dark:scheme-dark;
+  }
+}
+
+@theme static {
+  --font-sans: Inter, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-primary: #0a3d62;
+  --color-secondary: #3c6382;
+  --color-accent: #ffaed5;
+  --color-info: #ffaed5;
+
+  /* --ui-bg: #f7f9fb; */
+  --color-surface: #f7f9fb;
+  --color-card: #ffffff;
+  --color-text: #364153;
+
+  --color-green-50: #effdf5;
+  --color-green-100: #d9fbe8;
+  --color-green-200: #b3f5d1;
+  --color-green-300: #75edae;
+  --color-green-400: #00dc82;
+  --color-green-500: #00c16a;
+  --color-green-600: #00a155;
+  --color-green-700: #007f45;
+  --color-green-800: #016538;
+  --color-green-900: #0a5331;
+  --color-green-950: #052e16;
+
+  --ui-color-accent: var(--color-accent);
+}
+
+.dark {
+  /* --color-primary: #4ea3ff; */
+  --color-primary: #6cc8a0; /* teal-400 */
+  --color-secondary: #6fa8dc; /* blue-400 */
+  --color-accent: #ffaed5; /* pink-300 */
+  --color-accent2: #22d3ee; /* cyan-400 */
+  --color-soft: #67e8f9; /* cyan-300 */
+  --color-muted: #0891b2; /* cyan-600 */
+
+  --color-future: #a78bfa; /* violet-400 */
+  --color-surface: #0f172a; /* slate-900 */
+  --color-card: #162036; /*111827*/
+  --color-text: #e5e7eb; /* gray-200 */
+  --color-text-secondary: #94a3b8; /* gray-400 */
+  --color-text-muted: #64748b; /* gray-500 */
+}
+
+.surface-card {
+  @apply relative overflow-hidden rounded-xl
+    bg-slate-900/60
+    border border-white/5
+    backdrop-blur
+    transition-all duration-500 ease-out;
+}
+
+.surface-card-hover {
+  @apply hover:-translate-y-1
+    hover:shadow-[0_20px_60px_-20px_rgba(56,189,248,0.25)];
+}
+
+.surface-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.06), transparent 40%);
+  opacity: 0;
+  transition: opacity 500ms ease;
+}
+
+.surface-card:hover::before {
+  opacity: 1;
+}
+
+@keyframes card-in {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .animate-card-in {
+    animation: card-in 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+}
