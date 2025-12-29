@@ -43,11 +43,8 @@ const cards = ref([
       >
         <!-- class="surface-card surface-card-hover translate-y-6 animate-card-in" -->
         <!-- class="group relative overflow-hidden bg-slate-900/60 border border-white/5 backdrop-blur transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_20px_60px_-20px_rgba(56,189,248,0.25)] opacity-0 translate-y-6 animate-card-in" -->
+
         <!-- Accent glow layer -->
-        <!-- <div
-          class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br from-cyan-400/10 via-transparent to-transparent"
-        /> -->
-        <!-- <div class="surface-card surface-card-hover translate-y-6 animate-card-in" /> -->
         <div
           class="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-cyan-400/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
         />

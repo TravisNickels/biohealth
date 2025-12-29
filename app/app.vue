@@ -1,7 +1,13 @@
 <script setup>
+const base = useRuntimeConfig().app.baseURL
+
 useHead({
-  meta: [{ name: 'viewport', content: 'width=device-width, initial-scale=1' }],
-  link: [{ rel: 'icon', href: '/favicon.ico' }],
+  meta: [
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+    { name: 'author', content: 'Travis Nickels' },
+    { name: 'robots', content: 'index, follows' }
+  ],
+  link: [{ rel: 'icon', type: 'image/x-icon', href: `${base}favicon.ico` }],
   htmlAttrs: {
     lang: 'en'
   }
@@ -55,27 +61,3 @@ useSeoMeta({
     </UFooter>
   </UApp>
 </template>
-
-<!-- <UHeader>
-      <template #left>
-        <NuxtLink to="/">
-          <AppLogo class="w-auto h-6 shrink-0" />
-          <PureBioHealthLogo class="w-auto h-12" />
-        </NuxtLink>
-
-        <TemplateMenu />
-      </template>
-
-      <template #right>
-        <UColorModeButton />
-
-        <UButton
-          to="https://github.com/nuxt-ui-templates/starter"
-          target="_blank"
-          icon="i-simple-icons-github"
-          aria-label="GitHub"
-          color="neutral"
-          variant="ghost"
-        />
-      </template>
-    </UHeader> -->
