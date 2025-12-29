@@ -15,7 +15,7 @@ const bookTitle = '"Microplastics: We\'re all going to die!" - Coming Soon'
         class="surface-card surface-card-hover translate-y-6 animate-card-in"
         reverse
       >
-        <img src="/molecules_03_new.png" class="h-56 w-full rounded-lg" />
+        <img src="/molecules_03.png" class="h-56 w-full rounded-lg" />
       </UPageCard>
       <UPageCard
         :title="bookTitle"
@@ -23,7 +23,7 @@ const bookTitle = '"Microplastics: We\'re all going to die!" - Coming Soon'
         class="surface-card surface-card-hover translate-y-6 animate-card-in"
         reverse
       >
-        <img src="/microplastics_04_new.png" class="h-56 w-full rounded-lg" />
+        <img src="/microplastics_04.png" class="h-56 w-full rounded-lg" />
         <p class="text-xs text-slate-500 mt-2">Manuscript in development · 2025</p>
       </UPageCard>
       <UPageCard
@@ -32,7 +32,7 @@ const bookTitle = '"Microplastics: We\'re all going to die!" - Coming Soon'
         class="surface-card surface-card-hover translate-y-6 animate-card-in"
         reverse
       >
-        <img src="/molecules_02_new.png" class="h-56 w-full rounded-lg" />
+        <img src="/molecules_02.png" class="h-56 w-full rounded-lg" />
       </UPageCard>
     </UPageColumns>
   </UPageSection>
