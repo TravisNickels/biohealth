@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const base = useRuntimeConfig().app.baseURL
-const heroImage = ref(base + 'lab_01.png')
-const footerImage = ref(base + 'abstract_bg_22.png')
+const heroImage = ref(base + 'images/lab_01.png')
+const footerImage = ref(base + 'images/abstract_bg_22.png')
 </script>
 
 <template>
@@ -40,7 +40,7 @@ const footerImage = ref(base + 'abstract_bg_22.png')
             knowledge they need to make informed decisions about reducing microplastic exposure and protecting long-term health.
           </p>
         </template>
-        <img src="/microplastics_02.png" class="rounded-lg" />
+        <img src="/images/microplastics_02.png" class="rounded-lg" />
       </UPageCard>
     </UPageSection>
 

@@ -4,25 +4,25 @@ const cards = ref([
   {
     title: 'Molecular Filtration',
     description: 'Research-driven filtration approaches designed to selectively bind and remove microplastics from water and food systems hello.',
-    img: 'ChemistryEquipment_03.png'
+    img: 'images/ChemistryEquipment_03.png'
   },
   {
     title: 'Environmental Sensing',
     description:
       'Precision sensing and sampling methods to detect microplastics in air, water, and soil, supporting exposure mapping and research analysis.',
-    img: 'microplastics_06.png'
+    img: 'images/microplastics_06.png'
   },
   {
     title: 'Data & Research Platform',
     description:
       'A secure data platform for aggregating research findings, exposure measurements, and longitudinal trends across studies and environments.',
-    img: 'data_analysis.png'
+    img: 'images/data_analysis.png'
   },
   {
     title: 'Future Innovations',
     description:
       'Ongoing investigation into advanced materials, bioengineering, and analytical methods that may support future microplastics mitigation strategies.',
-    img: 'future_innovations_01.png'
+    img: 'images/future_innovations_01.png'
   }
 ])
 </script>

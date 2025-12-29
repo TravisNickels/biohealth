@@ -5,7 +5,7 @@ const leadership = ref([
   {
     name: 'Phil Kennedy, PhD',
     title: 'Founder & Chief Scientific Officer',
-    image: 'phil_kennedy_profile.jpg',
+    image: 'images/phil_kennedy_profile.jpg',
     bio: {
       intro: 'Science is our candle in the dark. To brighten it is to brighten everything.',
       note: '*this is my AI generated bio and I love it*',
