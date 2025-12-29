@@ -1,27 +1,28 @@
 <script setup lang="ts">
+const base = useRuntimeConfig().app.baseURL
 const cards = ref([
   {
     title: 'Molecular Filtration',
     description: 'Research-driven filtration approaches designed to selectively bind and remove microplastics from water and food systems hello.',
-    img: '/ChemistryEquipment_03.png'
+    img: 'ChemistryEquipment_03.png'
   },
   {
     title: 'Environmental Sensing',
     description:
       'Precision sensing and sampling methods to detect microplastics in air, water, and soil, supporting exposure mapping and research analysis.',
-    img: '/microplastics_06.png'
+    img: 'microplastics_06.png'
   },
   {
     title: 'Data & Research Platform',
     description:
       'A secure data platform for aggregating research findings, exposure measurements, and longitudinal trends across studies and environments.',
-    img: '/data_analysis.png'
+    img: 'data_analysis.png'
   },
   {
     title: 'Future Innovations',
     description:
       'Ongoing investigation into advanced materials, bioengineering, and analytical methods that may support future microplastics mitigation strategies.',
-    img: '/future_innovations_01.png'
+    img: 'future_innovations_01.png'
   }
 ])
 </script>
@@ -51,7 +52,7 @@ const cards = ref([
 
         <!-- Image -->
         <img
-          :src="card.img"
+          :src="base + card.img"
           class="mt-6 rounded-md max-h-60 w-full object-cover opacity-80 grayscale-10 transition-all duration-500 group-hover:opacity-100 group-hover:grayscale-0 group-hover:scale-[1.02]"
           :alt="card.title"
         />

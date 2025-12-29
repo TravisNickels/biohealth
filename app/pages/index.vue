@@ -1,3 +1,9 @@
+<script setup lang="ts">
+const base = useRuntimeConfig().app.baseURL
+const heroImage = ref(base + 'lab_01.png')
+const footerImage = ref(base + 'abstract_bg_22.png')
+</script>
+
 <template>
   <div>
     <UPageHero
@@ -15,7 +21,7 @@
       :ui="{ wrapper: 'relative' }"
     >
       <template #top>
-        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/lab_01.png')" />
+        <div class="absolute inset-0 bg-cover bg-center" :style="{ backgroundImage: `url(${heroImage})` }" />
         <div
           class="absolute inset-0 bg-linear-to-b from-[color-mix(in_oklab,var(--ui-bg)_1%,transparent)] via-[color-mix(in_oklab,var(--ui-bg)_75%,transparent)] to-[color-mix(in_oklab,var(--ui-bg)_1%,transparent)]"
         />
@@ -70,7 +76,7 @@
       </UPageColumns>
     </UPageSection>
 
-    <UPageSection class="inset-0 bg-cover bg-center" style="background-image: url('/abstract_bg_22.png')">
+    <UPageSection class="inset-0 bg-cover bg-center" :style="{ backgroundImage: `url(${footerImage})` }">
       <template #top>
         <!-- <div class="absolute inset-0 bg-black/30" /> -->
       </template>

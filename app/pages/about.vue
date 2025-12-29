@@ -1,10 +1,11 @@
 <script setup lang="ts">
+const base = useRuntimeConfig().app.baseURL
 const showModal = ref(false)
 const leadership = ref([
   {
     name: 'Phil Kennedy, PhD',
     title: 'Founder & Chief Scientific Officer',
-    image: '/phil_kennedy_profile.jpg',
+    image: 'phil_kennedy_profile.jpg',
     bio: {
       intro: 'Science is our candle in the dark. To brighten it is to brighten everything.',
       note: '*this is my AI generated bio and I love it*',
@@ -54,7 +55,7 @@ const openModal = (card: (typeof leadership.value)[0]) => {
         <div class="relative mx-auto mb-4 h-50 w-50">
           <img
             v-if="card.image"
-            :src="card.image"
+            :src="base + card.image"
             width="200"
             height="200"
             class="rounded-full ring-2 ring-cyan-400/20 shadow-md object-cover transition-transform duration-500 group-hover:scale-[1.02]"
@@ -81,7 +82,7 @@ const openModal = (card: (typeof leadership.value)[0]) => {
           <div class="flex items-center gap-6">
             <img
               v-if="selectedLeader?.image"
-              :src="selectedLeader?.image"
+              :src="base + selectedLeader?.image"
               width="150"
               height="150"
               class="rounded-full ring-2 ring-white shadow-md shrink-0"
