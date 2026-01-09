@@ -3,7 +3,7 @@ const base = useRuntimeConfig().app.baseURL
 const cards = ref([
   {
     title: 'Molecular Filtration',
-    description: 'Research-driven filtration approaches designed to selectively bind and remove microplastics from water and food systems hello.',
+    description: 'Research-driven filtration approaches designed to selectively bind and remove microplastics from water and food systems.',
     img: 'images/ChemistryEquipment_03.png'
   },
   {
