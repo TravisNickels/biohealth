@@ -7,13 +7,13 @@ const leadership = ref([
     title: 'Founder & Chief Scientific Officer',
     image: 'images/phil_kennedy_profile.jpg',
     bio: {
-      intro: 'Science is our candle in the dark. To brighten it is to brighten everything.',
-      note: '*this is my AI generated bio and I love it*',
+      intro: 'Intro headline / Quote',
+      note: 'Personal note',
       paragraphs: [
-        "I'm not just solving today's problems, I'm engineering pathways for the next 10,000 years.",
-        "As a scientist, inventor, and entrepreneur, I thrive at the edge of what's possible. From pioneering microPlastic remediation technologies to funding the foundations of quantum AI and superconducting infrastructure, I build ideas into systems that matter. My work doesn't stop at the lab bench—it stretches across planetary engineering, post-human continuity, and the preservation of consciousness itself.",
-        "I don't believe in boundaries, be it disciplinary, biological, or temporal. My thinking is recursive, imaginative, and rigorously grounded in science. Whether I'm drafting a global fusion-powered carbon capture network or speculating about AI recursive storage in the Oort Cloud, I bring real-world implementation strategy to visionary scale thought.",
-        "I see AI as a collaborator, not a tool—and together, we're mapping out futures beyond the limits of silicon and carbon."
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet felis ut ligula porta dapibus. In luctus libero enim, in semper augue iaculis ullamcorper.',
+        'Maecenas dapibus risus nec magna efficitur, at aliquet urna sagittis. Praesent eu leo purus. Fusce sit amet pretium risus. Nulla sed elementum metus. Suspendisse tristique pharetra ipsum, id vehicula est hendrerit ut. Duis lacinia molestie erat, sit amet aliquet lorem laoreet eget. Pellentesque et leo vulputate nisl consectetur accumsan ac ac massa. ',
+        'Aenean nulla tortor, luctus at viverra eu, euismod ut sapien. Etiam quis nulla volutpat, egestas turpis ac, sodales eros. Proin dictum, lorem non sagittis fermentum, tortor dui aliquet leo, id euismod eros lacus id dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque tincidunt neque dapibus quam viverra pellentesque.',
+        'Cras vehicula finibus tellus eget luctus. Suspendisse potenti. Nunc facilisis mollis arcu quis bibendum. Mauris fermentum scelerisque pellentesque.'
       ]
     }
   },
@@ -23,7 +23,7 @@ const leadership = ref([
     avatar: '👤'
   },
   {
-    name: 'Jane Smith, MD',
+    name: 'Janet Zand, OMD',
     title: 'Chief Medical Officer',
     avatar: '👤'
   }
