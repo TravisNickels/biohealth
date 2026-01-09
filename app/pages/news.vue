@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const bookTitle = '"Microplastics: We\'re all going to die!" - Coming Soon'
+const bookTitle = '"Microplastics: What can be done?" - Coming Soon'
 </script>
 
 <template>
@@ -24,7 +24,7 @@ const bookTitle = '"Microplastics: We\'re all going to die!" - Coming Soon'
         reverse
       >
         <img src="/images/microplastics_04.png" class="h-56 w-full rounded-lg" />
-        <p class="text-xs text-slate-500 mt-2">Manuscript in development · 2025</p>
+        <p class="text-xs text-slate-500 mt-2">Manuscript in development · 2026</p>
       </UPageCard>
       <UPageCard
         title="Latest research"
