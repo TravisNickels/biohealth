@@ -9,13 +9,37 @@ const bookTitle = '"Microplastics: What can be done?" - Coming Soon'
     variant="subtle"
   >
     <UPageColumns>
-      <UPageCard
-        title="Publication"
-        description="Peer-reviewed research and formal publications authored by our team, translating complex science into evidence that matters."
-        class="surface-card surface-card-hover translate-y-6 animate-card-in"
-        reverse
-      >
+      <UPageCard class="surface-card surface-card-hover translate-y-6 animate-card-in" reverse>
         <img src="/images/molecules_03.png" class="h-56 w-full rounded-lg" />
+
+        <div><p class="text-xs text-slate-500 mt-2">Published · 2025 · Peer-reviewed</p></div>
+        <template #title>
+          <div>
+            Reduction of Systemic Microplastic and Nano Plastic Burden Using a Food-Grade Plastic Adsorptive Compound (PAC): A Proof-of-Concept Human
+            Study
+          </div>
+        </template>
+        <template #description>
+          <div class="mt-4 flex items-center gap-4">
+            <UButton
+              to="/publications/reduction-of-systemic-microplastic-and-nano-plastic-burden-using-a-foodgrade-plastic-adsorptive-compound-pac-a-proofofco.pdf"
+              target="_blank"
+              variant="soft"
+              color="primary"
+              icon="i-lucide-file-text"
+            >
+              View PDF
+            </UButton>
+
+            <a
+              href="/publications/reduction-of-systemic-microplastic-and-nano-plastic-burden-using-a-foodgrade-plastic-adsorptive-compound-pac-a-proofofco.pdf"
+              download
+              class="text-xs text-slate-500 hover:text-slate-300 transition"
+            >
+              Download
+            </a>
+          </div>
+        </template>
       </UPageCard>
       <UPageCard
         :title="bookTitle"
